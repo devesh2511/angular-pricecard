@@ -1,0 +1,16 @@
+<section class="pricing py-5">
+  
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-4" *ngFor="let subscription of subscriptions; index as i">
+
+        <cards-component [plan]="subscription.plan" [price]="subscription.price" [mutedItems]="subscription.mutedArray"
+          [unMutedItems]="subscription.unMutedArray">
+        
+        </cards-component>
+      </div>
+    </div>
+  </div>
+
+</section>
